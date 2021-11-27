@@ -37,11 +37,11 @@ Fifth, run `gmn/getResult.py` to get the model result.
   
     `python getData.py GMN N1`
     
-    It will generate `xxx_pull_info_X.txt` and `xxx_pull_info_y.txt` files which include all data needed to build graph. The N1 indicates which model to use(GMN or Adaboost). The third parameter indicates the dataset size of the non-duplicate PR pairs used for training.
+    It will generate `xxx_pull_info_X.txt` and `xxx_pull_info_y.txt` files which include all data needed to build graph. The GMN indicates which model to use(GMN or Adaboost). The third parameter N1 indicates the dataset size of the non-duplicate PR pairs used for training.
     
 + getGraph_train_data.py.py
     
-    `python getGraph_train_data.py N1`
+    `python getGraph_train_data.py N`
     
     It will take `xxx_pull_info_X.txt` and `xxx_pull_info_y.txt` files from `data/clf` directory to build the training data graph. The N1 indicates the sliding window size used to build the graph, then two graph files will be generated in the `data/clf` directory, as follows:
       
